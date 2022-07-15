@@ -48,9 +48,7 @@ func main() {
 	num := 0
 
 	//message := &AppleMessage{Sign: 0, Body: time.Now().String(), Tag: "okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}
-	//
 	//marshal, _ := json.Marshal(message)
-	//
 	//encode, err = Encode(string(marshal))
 
 	for {
