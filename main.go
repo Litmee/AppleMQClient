@@ -16,7 +16,7 @@ type AppleMessage struct {
 }
 
 func doing(c *net.TCPConn) {
-	message := &AppleMessage{Sign: 0, Body: time.Now().String(), Tag: "okkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}
+	message := &AppleMessage{Sign: 0, Body: time.Now().String(), Tag: "ok"}
 
 	marshal, _ := json.Marshal(message)
 
