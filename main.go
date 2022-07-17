@@ -56,7 +56,7 @@ func main() {
 		num++
 		if num == 100000 {
 			log.Println(num)
-			time.Sleep(time.Second * 300)
+			time.Sleep(time.Second * 3000)
 			break
 		}
 		// time.Sleep(time.Second * 1)
