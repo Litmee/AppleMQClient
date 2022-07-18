@@ -6,6 +6,13 @@ import (
 	"encoding/binary"
 )
 
+type AppleMessage struct {
+	// Sign: 0 means from the producer, 1 means from the cluster machine synchronization
+	Sign int
+	Body string
+	Tag  string
+}
+
 // Encode message encoding
 func Encode(m string) ([]byte, error) {
 
