@@ -8,15 +8,8 @@ import (
 	"time"
 )
 
-type AppleMessage struct {
-	// Sign: 0 means from the producer, 1 means from the cluster machine synchronization
-	Sign int
-	Body string
-	Tag  string
-}
-
 func doing(c *net.TCPConn) {
-	message := &AppleMessage{Sign: 0, Body: time.Now().String(), Tag: "ok"}
+	message := &treaty.AppleMessage{Sign: 0, Body: time.Now().String(), Tag: "ok"}
 
 	marshal, _ := json.Marshal(message)
 
